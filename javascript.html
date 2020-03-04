@@ -4,7 +4,7 @@
     <title> javascript ajax </title>
     <script>
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", 'http://localhost:8080/api/tutorial/1.0/employees', true);
+        xhr.open("GET", 'http://localhost:8080/api/tutorial/1.0/employees/2', true);
         xhr.onload = function()
                     {
                         document.getElementById('risposta').innerHTML = xhr.response;
