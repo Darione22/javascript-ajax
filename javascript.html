@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title> javascript ajax </title>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", 'http://localhost:8080/api/tutorial/1.0/employees', true);
+        xhr.onload = function()
+                    {
+                        document.getElementById('risposta').innerHTML = xhr.response;
+                    };
+        xhr.onerror = function()
+                    { alert('ERRORE'); };
+        xhr.send();
+    </script>
+</head>
+<body>
+    <h1>esempio pagina richiesta ajax</h1>
+    <p>risposta: </p>
+    <div id = "risposta"></div>
+</body>
+</html>
